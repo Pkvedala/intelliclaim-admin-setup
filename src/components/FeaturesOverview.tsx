@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Gears, Gauge, MessageCircle } from 'lucide-react';
+import { FileText, Settings, Gauge, MessageCircle } from 'lucide-react';
 
 const features = [
   {
@@ -12,7 +12,7 @@ const features = [
     iconColor: 'text-blue-600'
   },
   {
-    icon: Gears,
+    icon: Settings,
     title: 'Automated Rule Engine',
     description: 'Define complex, compound rules and get instant validation.',
     bgColor: 'bg-green-50',
