@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -7,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import DatabaseConnections from "./pages/DatabaseConnections";
+import RuleManagement from "./pages/RuleManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin/database" element={<DatabaseConnections />} />
+          <Route path="/admin/rules" element={<RuleManagement />} />
           <Route path="/demo" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Demo page - Coming Soon</h1></div>} />
           <Route path="/features" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Features page - Coming Soon</h1></div>} />
           <Route path="/documentation" element={<div className="min-h-screen flex items-center justify-center"><h1 className="text-2xl">Documentation page - Coming Soon</h1></div>} />

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -57,15 +56,15 @@ const Admin = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Settings className="h-6 w-6 text-green-600 mr-2" />
-                System Settings
+                Rule Management
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600 mb-4">
-                Configure system-wide settings, rules engine, and processing parameters.
+                Upload, validate, and manage data validation and business logic rules.
               </p>
-              <Button asChild className="w-full" variant="outline">
-                <Link to="/admin/settings">Configure Settings</Link>
+              <Button asChild className="w-full">
+                <Link to="/admin/rules">Manage Rules</Link>
               </Button>
             </CardContent>
           </Card>
