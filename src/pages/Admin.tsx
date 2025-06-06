@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Database, Settings, Users, BarChart3 } from 'lucide-react';
+import BackToHomeButton from '@/components/ui/BackToHomeButton';
 
 const Admin = () => {
   return (
@@ -18,9 +20,7 @@ const Admin = () => {
               <span className="ml-4 text-gray-500">Admin Dashboard</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="outline" asChild>
-                <Link to="/">Back to Home</Link>
-              </Button>
+              <BackToHomeButton />
             </div>
           </div>
         </div>

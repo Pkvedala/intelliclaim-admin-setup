@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -10,6 +9,7 @@ import { Search, Filter, Download } from 'lucide-react';
 import ClaimsTable from '@/components/claims/ClaimsTable';
 import SearchFilters from '@/components/claims/SearchFilters';
 import SummaryWidgets from '@/components/claims/SummaryWidgets';
+import BackToHomeButton from '@/components/ui/BackToHomeButton';
 
 const ClaimsSearch = () => {
   const [searchBy, setSearchBy] = useState<'claimId' | 'patientName'>('claimId');
@@ -56,9 +56,7 @@ const ClaimsSearch = () => {
               <span className="ml-4 text-gray-500">Claims Processor &gt; Search Claims</span>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="outline" asChild>
-                <Link to="/">Back to Home</Link>
-              </Button>
+              <BackToHomeButton />
             </div>
           </div>
         </div>

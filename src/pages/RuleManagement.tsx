@@ -7,6 +7,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Upload, Settings } from 'lucide-react';
 import RuleUpload from '@/components/rules/RuleUpload';
 import RuleTable from '@/components/rules/RuleTable';
+import BackToHomeButton from '@/components/ui/BackToHomeButton';
 
 const RuleManagement = () => {
   return (
@@ -25,6 +26,7 @@ const RuleManagement = () => {
               <Button variant="outline" asChild>
                 <Link to="/admin">Back to Admin</Link>
               </Button>
+              <BackToHomeButton />
             </div>
           </div>
         </div>

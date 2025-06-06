@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -11,6 +10,7 @@ import PatientDataTab from '@/components/claims/detail/PatientDataTab';
 import MedicalDataTab from '@/components/claims/detail/MedicalDataTab';
 import PolicyDataTab from '@/components/claims/detail/PolicyDataTab';
 import ChatPanel from '@/components/claims/detail/ChatPanel';
+import BackToHomeButton from '@/components/ui/BackToHomeButton';
 
 const ClaimDetail = () => {
   const { claimId } = useParams<{ claimId: string }>();
@@ -50,6 +50,7 @@ const ClaimDetail = () => {
                   Back to Search
                 </Link>
               </Button>
+              <BackToHomeButton />
             </div>
           </div>
         </div>

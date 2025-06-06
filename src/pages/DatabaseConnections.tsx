@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -10,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Badge } from '@/components/ui/badge';
 import { useToast } from '@/hooks/use-toast';
 import { Plus, Edit, Trash, Eye, EyeOff, CheckCircle, XCircle, Database } from 'lucide-react';
+import BackToHomeButton from '@/components/ui/BackToHomeButton';
 
 interface ConnectionProfile {
   id: string;
@@ -225,6 +225,7 @@ const DatabaseConnections = () => {
               <Button variant="outline" asChild>
                 <Link to="/admin">Back to Admin</Link>
               </Button>
+              <BackToHomeButton />
             </div>
           </div>
         </div>
