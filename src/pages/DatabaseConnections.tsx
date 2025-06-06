@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -218,7 +219,7 @@ const DatabaseConnections = () => {
               <Link to="/" className="text-2xl font-bold text-blue-600">
                 IntelliClaim
               </Link>
-              <span className="ml-4 text-gray-500">Admin > Database Connections</span>
+              <span className="ml-4 text-gray-500">Admin &gt; Database Connections</span>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="outline" asChild>
