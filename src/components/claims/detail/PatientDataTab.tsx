@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -93,7 +94,9 @@ const PatientDataTab: React.FC<PatientDataTabProps> = ({ claimId }) => {
                     <div className="flex items-center gap-2">
                       <label className="font-medium text-gray-700">{field.label}</label>
                       {field.hasFutureDate && (
-                        <AlertTriangle className="h-4 w-4 text-red-600" title="DOB is future-dated" />
+                        <span title="DOB is future-dated">
+                          <AlertTriangle className="h-4 w-4 text-red-600" />
+                        </span>
                       )}
                     </div>
                     <span className={`text-sm ${getConfidenceColor(field.confidence)}`}>
